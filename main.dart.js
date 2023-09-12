@@ -43435,7 +43435,7 @@ s=a.as
 if(s==null)s=B.aE
 r=a.at
 q=a.ax
-q=q!=null?q-2:12
+q=q!=null?q-2.5:12
 p=m==null?B.av:m
 o=a.ch
 return new A.JK(l,B.HI,new A.ajO(),B.GN,A.ej(n,n,r,n,B.e,n,n,n,m===B.av?"YoonGothicTtf760":n,n,n,q,o,n,p,n,1.4,!0,n,0.4,n,n,n,n,n,n),s,n)},
