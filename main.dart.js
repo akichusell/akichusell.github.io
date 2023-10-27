@@ -44923,8 +44923,11 @@ b.x=a3}else if(f){a3=d?B.hH:B.eL
 b.x=a3}else if(e)b.x=B.aN
 else if(d)b.x=B.kT
 else if(c)b.x=B.L}else if(b instanceof A.py)b.x=B.aN
-if(a2.h(a4,a0)!=null)b.y=A.add(J.ap(a2.h(a4,a0),"action"))
-else if(a2.h(a4,"reply")!=null)b.y=A.ade(J.ap(a2.h(a4,a0),"reply"))}}
+a3=a2.h(a4,a0)
+if((a3==null?a:J.ap(a3,"action"))!=null){a2=a2.h(a4,a0)
+b.y=A.add(a2==null?a:J.ap(a2,"action"))}else{a3=a2.h(a4,a0)
+if((a3==null?a:J.ap(a3,"reply"))!=null){a2=a2.h(a4,a0)
+b.y=A.ade(a2==null?a:J.ap(a2,"reply"))}}}}
 A.py.prototype={
 a1G(a,b){var s,r=this,q=J.a7(a),p=q.h(a,"children")
 if(p==null)p=[]
