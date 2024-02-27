@@ -29,6 +29,25 @@ function readMultiFiles(e) {
     }
     reader.readAsArrayBuffer(file);
   })
+  const removeBtn = document.querySelector(".custom-remove");
+  const fileNameSpan = document.querySelector("#file-names");
+  if (files.length === 0) {
+    fileNameSpan.textContent = "로고 불러오기"
+    removeBtn.style.visibility = "hidden";
+  } else {
+    fileNameSpan.textContent = `${files.length}개 파일 선택됨`;
+    removeBtn.style.visibility = "visible";
+  }
+}
+
+function removeFiles() {
+  fileData = {};
+
+  const removeBtn = document.querySelector(".custom-remove");
+  const fileNameSpan = document.querySelector("#file-names");
+
+  fileNameSpan.textContent = "로고 불러오기"
+  removeBtn.style.visibility = "hidden";
 }
 
 function setupData(json) {

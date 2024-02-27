@@ -27,6 +27,28 @@ body {
   background-color: rgba(255, 0, 0, .0);
 }
 
+#logos {
+  margin: 10px;
+}
+
+.custom-file-upload {
+  padding: 6px 25px;
+  background-color:#3b7cf3;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.custom-remove {
+  margin-left: 5px;
+  padding: 6px 25px;
+  background-color:#3b7cf3;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  visibility: hidden;
+}
+
 #controls input {
   display: block;
   width: 13vw;
