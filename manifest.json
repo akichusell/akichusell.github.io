@@ -1,6 +1,6 @@
 {
-    "name": "a2p_renderer",
-    "short_name": "a2p_renderer",
+    "name": "biz_rcs_tool",
+    "short_name": "biz_rcs_tool",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

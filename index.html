@@ -23,37 +23,46 @@
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="a2p_renderer">
+  <meta name="apple-mobile-web-app-title" content="biz_rcs_tool">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>a2p_renderer</title>
+  <title>biz_rcs_tool</title>
   <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "1417000568";
+    const serviceWorkerVersion = "2154621486";
   </script>
+  <script type="text/javascript" src="scripts.js"></script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
 <body>
-  <script>
-    window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
-          });
-        }
-      });
-    });
-  </script>
+  <div class="row">
+    <div id="web" class="area">
+      <h1>RCS Biz Web</h1>
+      <div>
+        <input type="file" id="file-input" onChange="readMultiFiles(event)" multiple />
+      </div>
+      <div id="controls">
+        <textarea id="input_json" placeholder="insert json"></textarea>
+        <input value="PASS TO WebAPP" type="button"
+               onclick="setupData(document.getElementById('input_json').value)">
+      </div>
+      <div id="result_area">
+        <h1>RESULT</h1>
+        <textarea id="result"></textarea>
+      </div>
+    </div>
+    <div id="web_app" class="area">
+      <h1>Web App</h1>
+      <!--<p>flutter 로 구현한 web app 영역<br/>메시지 렌더링 및 변수들을 수정하고 EXPORT 하여 다시 web 으로 전달</p>-->
+      <div class="app" id="flutter_app"></div>
+    </div>
+  </div>
 </body>
 </html>

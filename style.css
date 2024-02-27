@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.row#start {
+  justify-content: start;
+}
+.description {
+  text-align: center;
+}
+.area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.area#web {
+  width: 15vw;
+  background-color: rgba(128, 128, 128, .3);
+}
+.area#web_app {
+  width: 85vw;
+  background-color: rgba(255, 0, 0, .0);
+}
+
+#controls input {
+  display: block;
+  width: 13vw;
+  text-align: center;
+}
+#controls input[type="button"] {
+  line-height: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  background-color: #3b7cf3;
+  height: 50px;
+  color: white;
+  cursor: pointer;
+}
+#controls input[type="button"]:hover {
+  /* .active:hover background-color: #96B6E3;*/
+  background-color: #3672E0;
+  color: white;
+}
+#controls1 #input_json_logo {
+  width: 12vw;
+  height: 10vh;
+  padding: 10px;
+  resize: none;
+}
+#controls textarea {
+  width: 12vw;
+  height: 35vh;
+  padding: 10px;
+  resize: none;
+}
+#result_area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#result_area textarea {
+  width: 12vw;
+  height: 30vh;
+  padding: 10px;
+  resize: none;
+}
+
+#flutter_app {
+  width: 98%;
+  height: 90vh;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#result_area {
+  visibility: hidden;
+}
