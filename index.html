@@ -21,7 +21,7 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "2761737187";
+    const serviceWorkerVersion = "2410349042";
   </script>
   <script type="text/javascript" src="scripts.js"></script>
   <!-- This script adds the flutter initialization JS code -->
@@ -40,9 +40,12 @@
           <span>제거</span>
         </label>
       </div>
-      <div id="controls">
+      <div>
+        <input value="기본 파일 적용" type="button" class="control_input" style="height: 30px;" onclick="readFileToJson()">
+      </div>
+      <div>
         <textarea id="input_json" placeholder="insert json"></textarea>
-        <input value="PASS TO WebAPP" type="button"
+        <input value="PASS TO WebAPP" type="button" class="control_input"
                onclick="setupData(document.getElementById('input_json').value)">
       </div>
       <div id="result_area">

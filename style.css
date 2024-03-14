@@ -50,35 +50,34 @@ body {
   visibility: hidden;
 }
 
-#controls input {
+.control_input {
   display: block;
   width: 13vw;
   text-align: center;
-}
-#controls input[type="button"] {
   line-height: 10px;
   font-size: 14px;
   border-radius: 5px;
   border: none;
   background-color: #3b7cf3;
-  height: 50px;
+  height: 42px;
   color: white;
   cursor: pointer;
+  margin-bottom: 3px;
 }
-#controls input[type="button"]:hover {
-  /* .active:hover background-color: #96B6E3;*/
+.control_input:hover {
   background-color: #3672E0;
   color: white;
 }
+
 #controls1 #input_json_logo {
   width: 12vw;
   height: 10vh;
   padding: 10px;
   resize: none;
 }
-#controls textarea {
+#input_json {
   width: 12vw;
-  height: 35vh;
+  height: 20vh;
   padding: 10px;
   resize: none;
 }

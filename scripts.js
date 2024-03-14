@@ -25,7 +25,7 @@ function readMultiFiles(e) {
     const file = files[i];
     const reader = new FileReader();
     reader.onload = () => {
-      fileData[`https://logo_url.com/${file.name}`] = reader.result;
+      fileData[`maap://${file.name}`] = reader.result;
     }
     reader.readAsArrayBuffer(file);
   })
@@ -72,7 +72,24 @@ window.requestUpload = async (json) => {
     const key = keys[i];
     const byte = json[key];
     //console.log("key : " + key + ", value : " + byte.length)
-    retJson[key] = "https://test_uploaded_url.com/" + key + ".jpg";
+    retJson[key] = "maap://" + key + ".jpg";
   }
   return Promise.resolve(retJson);
+}
+
+function readFileToJson() {
+  const readFile = (url) => {
+    return new Promise((resolve, reject) => {
+      fetch(url)
+      .then((response) => response.text())
+      .then((data) => resolve(data))
+      .catch((error) => reject(error));
+    });
+  };
+
+  readFile('json.json').then((data) => {
+    document.getElementById('input_json').value = data;
+  }).catch((error) => {
+    console.error(error);
+  });
 }
