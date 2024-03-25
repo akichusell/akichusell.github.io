@@ -5,6 +5,7 @@ body {
 .row {
   display: flex;
   flex-direction: row;
+  background-color: rgb(230, 230, 230);
 }
 .row#start {
   justify-content: start;
@@ -20,10 +21,10 @@ body {
 }
 .area#web {
   width: 15vw;
-  background-color: rgba(128, 128, 128, .3);
+  background-color: rgb(230, 230, 230);
 }
 .area#web_app {
-  width: 85vw;
+  width: 930px;
 }
 
 #logos {
