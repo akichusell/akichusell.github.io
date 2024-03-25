@@ -24,12 +24,29 @@ body {
 }
 .area#web_app {
   width: 85vw;
-  background-color: rgba(255, 0, 0, .0);
 }
 
 #logos {
   margin: 10px;
   display: flex;
+}
+
+#button_container {
+  margin: 10px;
+}
+
+.json_button {
+  display: inline-block;
+  text-align: center;
+  line-height: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  background-color: #3b7cf3;
+  height: 30px;
+  margin: 2px;
+  color: white;
+  cursor: pointer;
 }
 
 .custom-file-upload {
@@ -52,7 +69,6 @@ body {
 
 .control_input {
   display: block;
-  width: 13vw;
   text-align: center;
   line-height: 10px;
   font-size: 14px;
