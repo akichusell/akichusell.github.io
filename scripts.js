@@ -1,6 +1,6 @@
 window.onload = (val) => {
   const buttonContainer = document.getElementById('button_container');
-  const buttonCount = 7; // 버튼 갯수
+  const buttonCount = 6; // 버튼 갯수
 
   for (let i = 0; i < buttonCount; i++) {
     const button = document.createElement('input');
