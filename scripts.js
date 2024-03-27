@@ -125,7 +125,7 @@ window.onRequestUpload = async (json) => {
 }
 
 // TODO: MUST implement function (listen)
-window.onCloseApp = () => {
+window.onCloseApp = (rewrite) => {
   document.getElementById('input_json').value = '';
   document.getElementById("result_area").style.visibility = "hidden";
   document.getElementById("result").value = '';
