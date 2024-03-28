@@ -25,7 +25,7 @@ function readMultiFiles(e) {
     const file = files[i];
     const reader = new FileReader();
     reader.onload = () => {
-      fileData[`maap://${file.name}`] = reader.result;
+      fileData[`maap://fileId_${file.name}`] = reader.result;
     }
     reader.readAsArrayBuffer(file);
   })
